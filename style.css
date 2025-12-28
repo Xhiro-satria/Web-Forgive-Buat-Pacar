@@ -1,0 +1,91 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+    z-index: 2;
+    background: linear-gradient(90deg, #ffc5f5, #fd57a7);
+}
+
+.main2-container {
+    display: none;   
+    z-index: 1;
+    opacity: 0;
+    background: linear-gradient(90deg, #ffc5f5, #fd57a7);
+}
+
+.main3-container{
+    display: none;   
+    z-index: 1;
+    opacity: 0;
+    background: linear-gradient(90deg, #ffc5f5, #fd57a7);
+}
+    
+.main-container,
+.main2-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transition: opacity 0.5s ease;
+}
+
+
+.second-container {
+    width: 500px;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 40px 50px rgba(0, 0, 0, 0.2);
+}
+
+.judul {
+    font-weight: 600;
+    color: #fd57a7;
+}
+
+.input-name {
+    border: 1px solid #fd57a7;
+    border-radius: 8px;
+    padding: 8px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.input-name:focus {
+    border-color: #ff2f92;
+    box-shadow: 0 0 8px rgba(253, 87, 167, 0.6);
+}
+
+.tombol {
+    background-color: #fd57a7;
+}
+
+.tombol:hover {
+    background-color: #e04892;
+}
+
+.tombol-ya {
+    background-color: #fd57a7;
+}
+
+.tombol-ya:hover {
+    background-color: #e04892;
+}
+
+.tombol-tidak {
+    background-color: #ffffff;
+    border-color: #fd57a7;
+    position: relative;
+}
+
+.tombol-tidak:hover {
+    background-color: #ffffff;
+}
+
+.btn-ya,
+.btn-tidak {
+    transition: transform 0.3s ease;
+}
+
