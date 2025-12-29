@@ -77,3 +77,5 @@ btnLanjut.addEventListener("click", function () {
         main3.style.transition = "opacity 0.5s ease"; // efek fade in
     });
 });
+
+//<!-- create by XhyroSatria -->
