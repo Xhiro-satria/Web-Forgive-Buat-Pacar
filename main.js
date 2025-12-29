@@ -11,24 +11,34 @@ document.addEventListener("DOMContentLoaded", function () {
     // FORM 2
     const btnTidak = document.getElementById("btnTidak");
     const btnYa = document.getElementById("btnYa");
+    let namaUser = "";
 
     let scaleYa = 1;
     let scaleTidak = 1;
-
+    
     // LANJUT FORM 1
-    btnLanjut.addEventListener("click", function () {
-        if (nameInput.value.trim() === "") {
-            alert("Isi dulu nama kamu 💖");
-            nameInput.focus();
-        } else {
-            main1.style.opacity = "0";
-            main1.style.pointerEvents = "none";
+btnLanjut.addEventListener("click", function () {
+    if (nameInput.value.trim() === "") {
+        alert("Isi dulu nama kamu 😙");
+        nameInput.focus();
+    } else {
+        // simpan nama
+        namaUser = nameInput.value.trim();
 
-            main2.style.display = "flex";
-            main2.style.opacity = "1";
-            main2.style.pointerEvents = "auto";
-        }
-    });
+        // tampilkan nama di card 2 & 3
+        document.getElementById("namaUser").textContent = namaUser;
+        document.getElementById("namaUser3").textContent = namaUser;
+
+        // transisi card
+        main1.style.opacity = "0";
+        main1.style.pointerEvents = "none";
+
+        main2.style.display = "flex";
+        main2.style.opacity = "1";
+        main2.style.pointerEvents = "auto";
+    }
+});
+
 
     // KLIK GAKKK
     btnTidak.addEventListener("click", function (e) {
